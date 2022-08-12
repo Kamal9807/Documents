@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* .headerSec {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+* .headerSec .navbar {
+  padding: 0;
+}
+
+* .headerSec .navbar .logo {
+  max-width: 70%;
+}
+
+* .topParaCol {
+  margin: auto;
+  font-family: Roboto;
+}
+
+* .topParaCol .topH1 {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+* .topParaCol .topPara {
+  margin-top: 20px;
+  color: #444444;
+}
+
+* .section-2 {
+  margin: 5rem 0;
+  background-color: #4daf40;
+}
+
+* .section-2 .sec2Div {
+  padding: 4rem 0;
+}
+
+* .section-2 .sec2Div .sec2H1 {
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: xxx-large;
+}
+
+* .section-2 .sec2Div .sec2Para {
+  color: #ffffff;
+  font-size: small;
+}
+
+* .imagesRow {
+  text-align: center;
+}
+
+* .imagesRow .solarImg {
+  max-width: 94%;
+}
+
+* .imagesRow .imgH6 {
+  color: #212221;
+}
+
+* .imagesRow .imgPara {
+  font-size: x-small;
+  color: #444444;
+}
+/*# sourceMappingURL=ass1.css.map */

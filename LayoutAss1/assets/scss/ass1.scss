@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  .headerSec {
+    position: sticky;
+    .navbar {
+      padding: 0;
+      .logo {
+        max-width: 70%;
+      }
+    }
+  }
+  //top-section
+  .topParaCol {
+    margin: auto;
+    font-family: Roboto;
+    .topH1 {
+      font-weight: bold;
+      margin-top: 2rem;
+    }
+    .topPara {
+      margin-top: 20px;
+      color: #444444;
+    }
+  }
+  //section 2
+  .section-2 {
+    margin: 5rem 0;
+    background-color: #4daf40;
+    .sec2Div {
+      padding: 4rem 0;
+      .sec2H1 {
+        color: #ffffff;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: xxx-large;
+      }
+      .sec2Para {
+        color: #ffffff;
+        font-size: small;
+      }
+    }
+  }
+  //section 3
+  .imagesRow {
+    text-align: center;
+    .solarImg {
+      max-width: 94%;
+    }
+    .imgH6 {
+      color: #212221;
+    }
+    .imgPara {
+      font-size: x-small;
+      color: #444444;
+    }
+  }
+}

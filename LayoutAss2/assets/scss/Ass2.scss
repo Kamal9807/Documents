@@ -1,0 +1,447 @@
+@import "./partials/color";
+//variables
+$bold: bold;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  .navbarBackground {
+    background-color: map-get($theme-color, "yellow");
+    .navbar-brand {
+      font-size: medium;
+      .align-text-top {
+        max-width: 50%;
+      }
+    }
+    .navbarLogo {
+      flex-direction: row;
+    }
+  }
+  //navbar2
+  .navbarbg {
+    background-color: map-get($theme-color, "slightblue");
+    .logo {
+      max-width: 80%;
+    }
+    .nav-link {
+      color: map-get($theme-color, "darkBlue");
+      font-weight: $bold;
+    }
+    .signBut {
+      color: map-get($theme-color, "darkBlue");
+      background-color: map-get($theme-color, "yellow");
+    }
+    .searchButton {
+      padding: 4px 6px;
+      background-color: map-get($theme-color, "blue");
+      .searchBtn {
+        background-image: url("../images/Component%20102.png");
+        background-repeat: no-repeat;
+        padding: 10px;
+      }
+    }
+    .btn-outline-secondary {
+      background-color: map-get($theme-color, "white");
+    }
+  }
+
+  //top-section
+  .top-section {
+    padding-bottom: 5rem;
+    background-color: map-get($theme-color, "slightblue");
+    .topSection-row {
+      margin: auto;
+      .topSection {
+        margin: auto;
+        .topH5 {
+          color: map-get($theme-color, "darkBlue");
+          font-weight: $bold;
+        }
+        .topH1 {
+          color: map-get($theme-color, "darkBlue");
+
+          font-weight: $bold;
+        }
+        .topBut1,
+        .topBut2 {
+          background-color: map-get($theme-color, "white");
+        }
+        .topBut1:hover {
+          background-color: map-get($theme-color, "yellow");
+          border: none;
+        }
+        .topBut2:hover {
+          background-color: map-get($theme-color, "yellow");
+          border: none;
+        }
+      }
+    }
+  }
+
+  //clock-part
+  .sucess-section {
+    background-color: map-get($theme-color, "darkBlue");
+    border-radius: 10px;
+    margin-bottom: 5rem;
+    padding: 20px;
+    .successImg-div {
+      padding-left: 10px;
+      text-align: center;
+    }
+    .successPara-div {
+      margin: auto;
+      color: map-get($theme-color, "white");
+      .clockH1 {
+        font-weight: $bold;
+        .ParaColourChange {
+          color: map-get($theme-color, "yellow");
+        }
+      }
+    }
+    .successClock-div {
+      display: flex;
+      margin: auto;
+      .clockH1 {
+        font-weight: bold;
+      }
+    }
+  }
+
+  //card-img-top
+  .courses-section {
+    margin-bottom: 5rem;
+    .cardsheading {
+      text-align: center;
+      color: map-get($theme-color, "darkBlue");
+      font-weight: $bold;
+    }
+    .cardCol {
+      margin-top: 60px;
+      .card-main {
+        margin: auto;
+        .cardBigImg {
+          position: relative;
+        }
+        .cardSmallImg {
+          display: none;
+          max-width: 20%;
+          position: absolute;
+          left: 15px;
+          top: 132px;
+          padding: 5px;
+          background-color: map-get($theme-color, "white");
+        }
+        .cardH5 {
+          font-weight: bold;
+          color: map-get($theme-color, "darkBlue");
+          height: 50px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; /* number of lines to show */
+          -webkit-box-orient: vertical;
+        }
+        .cardPara {
+          color: map-get($theme-color, "hash");
+          font-size: small;
+        }
+      }
+    }
+
+    .cardCol:hover {
+      transform: scale(1.06);
+      transition: transform 150ms cubic-bezier(0, 0, 0.38, 0.9);
+      transition-property: transform;
+      transition-duration: 150ms;
+      transition-timing-function: cubic-bezier(0, 0, 0.38, 0.9);
+      transition-delay: 0s;
+    }
+  }
+
+  //black Img
+  .BlackImg-Section {
+    margin-bottom: 5rem;
+    .kimmie {
+      text-align: center;
+      margin: 0;
+    }
+    .Junior {
+      text-align: center;
+    }
+    .blkImgH1 {
+      font-size: 3.5rem;
+
+      font-weight: $bold;
+      color: map-get($theme-color, "darkBlue");
+    }
+    .blkpara {
+      font-size: medium;
+      font-family: Inter;
+      color: map-get($theme-color, "darkHash");
+    }
+    .blkH6 {
+      color: map-get($theme-color, "darkBlue");
+      font-weight: bold;
+      padding-top: 35px;
+    }
+    .blkSmallImg {
+      display: flex;
+    }
+    .blkpara1 {
+      color: map-get($theme-color, "darkBlue");
+      font-size: small;
+      margin: 0;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+    .blkpara2 {
+      color: map-get($theme-color, "hash");
+      font-size: smaller;
+    }
+  }
+
+  //fourimages
+  .fourimages {
+    padding: 55px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: map-get($theme-color, "slightblue");
+    background-image: url("../images/map.png");
+    .fourimagesRow {
+      margin: auto;
+      .imgcol {
+        text-align: center;
+        .imgh1 {
+          color: map-get($theme-color, "darkBlue");
+          font-weight: bold;
+        }
+        .imgpara {
+          color: map-get($theme-color, "blue");
+          font-size: small;
+          font-weight: $bold;
+        }
+      }
+    }
+  }
+  //girl image
+  .girlImgSection {
+    margin: auto;
+    margin-top: 6rem;
+    .girl-img {
+      align-items: center;
+      max-width: 60%;
+      margin-left: 80px;
+    }
+  }
+  .Subscribe {
+    margin: auto;
+    .SubNow {
+      color: map-get($theme-color, "yellow");
+    }
+    .subNowH1 {
+      color: map-get($theme-color, "darkBlue");
+      font-weight: bold;
+    }
+    .girl-form {
+      .girl-label {
+        position: relative;
+        .sub-button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          border: none;
+          background: map-get($theme-color, "yellow");
+          color: map-get($theme-color, "darkBlue");
+        }
+      }
+    }
+  }
+  //3 cards section
+  .card-section {
+    margin-top: 4rem;
+    background-color: map-get($theme-color, "slightblue");
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    .OurPlans {
+      color: map-get($theme-color, "yellow");
+      font-weight: $bold;
+    }
+    .CardH1 {
+      color: map-get($theme-color, "darkBlue");
+
+      font-weight: $bold;
+    }
+    .btnCol {
+      .yearlyBtn {
+        background-color: map-get($theme-color, "white");
+        font-size: small;
+        float: right;
+        border-radius: 0;
+        border: none;
+      }
+      .yearlyBtn:hover {
+        background-color: map-get($theme-color, "blue");
+      }
+      .monthlyBtn {
+        background-color: map-get($theme-color, "white");
+        font-size: small;
+        float: right;
+        border-radius: 0;
+        border: none;
+      }
+      .monthlyBtn:hover {
+        background-color: map-get($theme-color, "blue");
+      }
+    }
+    .ThreeCard {
+      margin: auto;
+    }
+    .cardheader {
+      background-color: map-get($theme-color, "darkBlue");
+      margin-left: 77px;
+      margin-right: 86px;
+      text-align: center;
+      padding: 5px;
+      border-radius: 0;
+      font-weight: bolder;
+    }
+    .card-title {
+      color: map-get($theme-color, "darkBlue");
+    }
+    .cardtext {
+      font-size: small;
+    }
+    .cardUl {
+      list-style: none;
+      .li-para {
+        color: map-get($theme-color, "darkBlue");
+        line-height: 35px;
+      }
+      li::before {
+        content: "✓";
+        color: green;
+      }
+    }
+    .ButtonDiv {
+      text-align: center;
+      .cardButton {
+        background-color: map-get($theme-color, "darkBlue");
+        color: map-get($theme-color, "white");
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+  }
+  .cardButton:hover {
+    background-color: map-get($theme-color, "yellow");
+  }
+  //footer section
+  .footer {
+    background-color: map-get($theme-color, "darkBlue");
+    padding-bottom: 0;
+    .footer-space {
+      padding-top: 2rem;
+      .footerUl {
+        list-style: none;
+        line-height: 2rem;
+      }
+    }
+    //copy-right
+    .copyright {
+      background-color: map-get($theme-color, "yellow");
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding-top: 12px;
+      padding-bottom: 1px;
+      .copy-right-para {
+        padding-left: 8px;
+        color: map-get($theme-color, "darkBlue");
+      }
+    }
+  }
+
+  //media query
+  @media only screen and (min-width: 320px) and (max-width: 425px) {
+    //navbar 1
+    .navbarBackground {
+      background-color: map-get($theme-color, "yellow");
+      .navbar-brand {
+        font-size: small;
+      }
+    }
+    //top-section
+    .Analytic-img {
+      margin-top: 35px;
+    }
+    //success -section
+    .sucess-section {
+      .successImg-div {
+        padding-left: 54px;
+      }
+      .successPara-div {
+        text-align: center;
+      }
+      .successClock-div {
+        .clock {
+          font-size: larger;
+          text-align: center;
+        }
+      }
+    }
+    //fourimages
+    .fourimages {
+      .fourimagesRow {
+        .imgcol {
+          text-align: center;
+          margin-top: 4rem;
+        }
+      }
+    }
+    //black-img Section
+    .BlackImg-Section {
+      margin-bottom: 5rem;
+      .blkSmallImg {
+        .smallBlkImg {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 570px) and (max-width: 750px) {
+    //clock-section
+    .sucess-section {
+      .successImg-div {
+        padding-left: 54px;
+      }
+      .successPara-div {
+        text-align: center;
+      }
+      .successClock-div {
+        .clock {
+          text-align: center;
+        }
+      }
+    }
+    //four-img Section
+    .fourimagesRow {
+      .imgcol {
+        text-align: center;
+        margin-top: 4rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 760px) and (max-width: 1200px) {
+    //clock section
+    .sucess-section {
+      .successPara-div {
+        text-align: center;
+      }
+      .successClock-div {
+        .clock {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
